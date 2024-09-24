@@ -8,11 +8,11 @@ export default function HomePage() {
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="flex flex-col justify-center space-y-8">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-              Hi, I'm <span className="text-blue-500">Your Name</span>
+              Hi, I'm <span className="text-blue-500">Alan James</span>
+
             </h1>
             <p className="text-xl text-gray-300 sm:text-2xl">
-              A passionate web developer specializing in creating beautiful and functional websites.
-              I love turning ideas into reality through code.
+            A passionate software engineer who loves to build stuff for the real world 
             </p>
             <div className="flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
               <Link

@@ -1,10 +1,11 @@
 "use client"
 import { useState, useEffect } from "react";
-import Sidebar from "./components/sidebar";
-import HomePage from "./components/intro";
-
-
-export default function Home() {
+import Sidebar from "../components/sidebar";
+export default function Layout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
 
 	const [showSidebar, setShowSidebar] = useState(true);
 	console.log("showsidebar", showSidebar)
@@ -28,8 +29,9 @@ export default function Home() {
 		};
 	}, [showSidebar]);
 
-	return (
-		<div className="flex min-h-screen bg-gray-100">
+
+  return (
+<div className="flex min-h-screen bg-gray-100">
 			{/* Sidebar: Hidden on smaller screens, visible on medium and larger */}
 			<div className={`fixed inset-y-0 left-0 transform ${showSidebar ? "translate-x-0" : "-translate-x-full"} md:translate-x-0 transition-transform duration-300 ease-in-out bg-white w-64 shadow-lg z-40 md:flex`}>
 				<Sidebar />
@@ -37,8 +39,8 @@ export default function Home() {
 
 			{/* Main content area */}
 			<main className={`flex-1 p-4 md:p-8 bg-gray-900 transition-all duration-300 ${showSidebar ? "ml-64" : ""}`}>
-				<HomePage />
-			</main>
+                {children}
+            </main>
 
 			{/* Mobile Menu Button: Visible only on small screens */}
 			<div className="fixed top-4 left-4 md:hidden">
@@ -61,5 +63,6 @@ export default function Home() {
 			)}
 		</div>
 
-	);
+
+  );
 }
