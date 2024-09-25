@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { Menu, X, Home, User, Briefcase, Code, Mail, Github, Linkedin, Twitter } from 'lucide-react'
+import socials from '@/data/socials';
 
 export default function Sidebar() {
 
@@ -49,13 +50,13 @@ export default function Sidebar() {
                         </nav>
                     </div>
                     <div className="flex justify-center space-x-4">
-                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <a href={socials.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                             <Github className="h-6 w-6 text-gray-300 hover:text-white" />
                         </a>
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <a href={socials.linkedin} target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                             <Linkedin className="h-6 w-6 text-gray-300 hover:text-white" />
                         </a>
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                        <a href={socials.twitter} target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                             <Twitter className="h-6 w-6 text-gray-300 hover:text-white" />
                         </a>
                     </div>

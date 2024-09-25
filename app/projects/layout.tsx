@@ -27,7 +27,7 @@ export default function Layout({
 		return () => {
 			window.removeEventListener('resize', handleResize);
 		};
-	}, [showSidebar]);
+	}, []);
 
 
   return (

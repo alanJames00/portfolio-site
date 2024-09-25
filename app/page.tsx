@@ -26,7 +26,7 @@ export default function Home() {
 		return () => {
 			window.removeEventListener('resize', handleResize);
 		};
-	}, [showSidebar]);
+	}, []);
 
 	return (
 		<div className="flex min-h-screen bg-gray-100">
