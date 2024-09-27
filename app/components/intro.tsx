@@ -1,14 +1,24 @@
 import Link from 'next/link'
 import { ArrowRight, Download } from 'lucide-react'
+import { useState, useEffect } from 'react';
 
 export default function HomePage() {
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsVisible(prev => !prev);
+    }, 700); // Change the interval time (in milliseconds) to control blinking speed
+
+    return () => clearInterval(interval); // Cleanup the interval on component unmount
+  }, []);
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-gray-900 text-white">
       <div className="container mx-auto px-4 py-16 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="flex flex-col justify-center space-y-8">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-              Hi, I'm <span className="text-blue-500">Alan James</span>
+              Hi, I'm <span className="text-blue-500">Alan James<span className={ isVisible ? 'inline': 'hidden'}>&#9612;</span></span>
 
             </h1>
             <p className="text-xl text-gray-300 sm:text-2xl">

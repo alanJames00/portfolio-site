@@ -3,7 +3,7 @@ import { IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 
 const geistSans = IBM_Plex_Mono({
-    weight: "300",
+    weight: "400",
     subsets: ['latin']
 });
 
