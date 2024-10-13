@@ -33,7 +33,7 @@ export default function Layout({
   return (
 <div className="flex min-h-screen bg-gray-100">
 			{/* Sidebar: Hidden on smaller screens, visible on medium and larger */}
-			<div className={`fixed inset-y-0 left-0 transform ${showSidebar ? "translate-x-0" : "-translate-x-full"} md:translate-x-0 transition-transform duration-300 ease-in-out bg-white w-64 shadow-lg z-40 md:flex`}>
+			<div className={`fixed inset-y-0 left-0 transform ${showSidebar ? "translate-x-0" : "translate-x-[-150%]"} md:translate-x-0 transition-transform duration-300 ease-in-out bg-white w-64 shadow-lg z-50 md:flex`}>
 				<Sidebar />
 			</div>
 
@@ -43,7 +43,7 @@ export default function Layout({
             </main>
 
 			{/* Mobile Menu Button: Visible only on small screens */}
-			<div className="fixed top-4 left-4 md:hidden">
+			<div className="fixed top-4 left-4 md:hidden z-60">
 				<button
 					onClick={() => setShowSidebar(!showSidebar)}
 					className="text-gray-600 focus:outline-none"
@@ -58,7 +58,7 @@ export default function Layout({
 			{showSidebar && (
 				<div
 					onClick={() => setShowSidebar(false)}
-					className="fixed inset-0 bg-black opacity-50 z-30 md:hidden"
+					className="fixed inset-0 bg-black opacity-50 z-40 md:hidden"
 				/>
 			)}
 		</div>

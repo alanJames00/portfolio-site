@@ -33,7 +33,7 @@ export default function Layout({
   return (
 <div className="flex min-h-screen bg-gray-100">
 			{/* Sidebar: Hidden on smaller screens, visible on medium and larger */}
-			<div className={`fixed inset-y-0 left-0 transform ${showSidebar ? "translate-x-0" : "-translate-x-full"} md:translate-x-0 transition-transform duration-300 ease-in-out bg-white w-64 shadow-lg z-40 md:flex`}>
+			<div className={`fixed inset-y-0 left-0 transform ${showSidebar ? "translate-x-0" : "translate-x-[-150%]"} md:translate-x-0 transition-transform duration-300 ease-in-out bg-white w-64 shadow-lg z-40 md:flex`}>
 				<Sidebar />
 			</div>
 
