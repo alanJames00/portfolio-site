@@ -18,11 +18,11 @@ export default function HomePage() {
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="flex flex-col justify-center space-y-8">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-              Hi, I'm <span className="text-blue-500">Alan James<span className={ isVisible ? 'inline-block w-[1px] bg-blue-500': 'hidden'}>&#9612;</span></span>
+              Hi, I&apos;m <span className="text-blue-500">Alan James<span className={isVisible ? 'inline-block w-[1px] bg-blue-500' : 'hidden'}>&#9612;</span></span>
 
             </h1>
             <p className="text-xl text-gray-300 sm:text-2xl">
-            A passionate software engineer who loves to build stuff for the real world 
+              A passionate software engineer who loves to build stuff for the real world
             </p>
             <div className="flex flex-col space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
               <Link
@@ -43,11 +43,6 @@ export default function HomePage() {
           </div>
           <div className="flex items-center justify-center">
             <div className="relative h-64 w-64 overflow-hidden rounded-full sm:h-72 sm:w-72 lg:h-96 lg:w-96">
-              <img
-                src="/placeholder.svg?height=384&width=384"
-                alt="Your Name"
-                className="h-full w-full object-cover"
-              />
             </div>
           </div>
         </div>

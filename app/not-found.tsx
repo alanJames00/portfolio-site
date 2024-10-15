@@ -12,11 +12,11 @@ export default function NotFound() {
                             Are You Lost, Stranger?
                         </h1>
                         <p className="text-lg mb-8">
-                            <p>How 'bout a cup of coffee...</p>
+                            <p>How &apos;bout a cup of coffee...</p>
                             <p>Sit back, take a sip,</p>
                             <p>And let the warmth take its grip.</p>
                             <br />
-                            <p>A fresh brew, and your path, you'll find.</p>
+                            <p>A fresh brew, and your path, you&apos;ll find.</p>
                         </p>
                         <Link
                             href="/"

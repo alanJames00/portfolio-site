@@ -1,7 +1,7 @@
 "use client"
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Menu, X, Home, User, Briefcase, Code, Mail, Github, Linkedin, Twitter } from 'lucide-react'
+import { Home, User, Briefcase, Code, Mail, Github, Linkedin, Twitter, BookOpenText, Binary } from 'lucide-react'
 import socials from '@/data/socials';
 
 export default function Sidebar() {
@@ -12,23 +12,21 @@ export default function Sidebar() {
     const navItems = [
         { name: 'Home', href: '/', icon: Home },
         { name: 'About', href: '/about', icon: User },
-        { name: 'Projects', href: '/projects', icon: Briefcase },
+        { name: "Work Experience", href: "/experience", icon: Briefcase },
+        { name: 'Projects', href: '/projects', icon: Binary },
         { name: 'Skills', href: '/skills', icon: Code },
+        { name: 'CV/Resume', href: '/resume', icon: BookOpenText},
         { name: 'Contact', href: '/contact', icon: Mail },
     ]
 
     return (
         <>
             <aside
-                className={`fixed top-0 left-0 z-30 h-screen w-64 transform bg-gray-800 text-white transition-transform duration-300 ease-in-out`}>
+                className={`fixed top-0 left-0 z-30 h-screen  w-72 transform bg-gray-800 text-white transition-transform duration-300 ease-in-out`}>
                 <div className="flex h-full flex-col justify-between p-4">
                     <div>
                         <div className="mb-8 flex items-center justify-center">
-                            <img
-                                src="/placeholder.svg?height=80&width=80"
-                                alt="Profile"
-                                className="h-20 w-20 rounded-full"
-                            />
+                            
                         </div>
                         <nav>
                             <ul className="space-y-2">

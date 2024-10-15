@@ -3,7 +3,7 @@ import { BriefcaseIcon, CalendarIcon, CheckCircleIcon } from 'lucide-react'
 export default function ExperienceCard({ company, position, startDate, endDate, responsibilities, achievements }: { company: string, position: string, startDate: string, endDate: string, responsibilities: string[], achievements: string[] }) {
   return (
     <div className="bg-gray-900 shadow-lg border-2 rounded-lg overflow-hidden mb-8">
-      <div className="bg-gray-700 text-white p-6">
+      <div className="bg-gray-800 text-white p-6">
         <h3 className="text-2xl font-bold text-yellow-100 mb-2">{company}</h3>
         <h4 className="text-xl mb-2">{position}</h4>
         <p className="flex items-center text-gray-300">

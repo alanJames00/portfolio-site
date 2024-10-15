@@ -1,4 +1,3 @@
-import { FC } from 'react'
 import { Mail, Phone, Linkedin, Github, MapPin } from 'lucide-react'
 
 export default function Page(){
