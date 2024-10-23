@@ -5,14 +5,13 @@ const experience =  [
     startDate: "Oct 2023",
     endDate: "Present",
     responsibilities: [
-      "Lead a team of 5 developers in maintaining and improving the company's main product dashboard",
-      "Collaborate with product managers and designers to implement new features and improve user experience",
-      "Conduct code reviews and mentor junior developers"
+      "Design and develop the entire backend system for the e-commerce startup.",
+      "Build and own the cloud infrastructure of the organization",
+      "Develop internal tools to streamline operations and improve team efficiency."
     ],
     achievements: [
-      "Redesigned the main product dashboard, resulting in a 30% increase in user engagement",
-      "Implemented new features using React and TypeScript, improving overall functionality",
-      "Optimized application performance, reducing load times by 40%"
+      "Developed set of internal tools that reduced operational workload by 60% and improved team efficiency, saving 30 hours per week.",
+      "Reduced cloud expenses by 50% through migration and optimization of the cloud infrastructure"
     ]
   },
   {
@@ -21,32 +20,14 @@ const experience =  [
     startDate: "Oct 2023",
     endDate: "Oct 2023",
     responsibilities: [
-      "Developed and maintained multiple client websites using Next.js and Node.js",
-      "Worked closely with clients to understand their requirements and implement solutions",
-      "Managed database design and implementation using MongoDB and PostgreSQL"
+      "Contributed to some of the promising open-source projects.",
+      "Helped the community by reviewing and merging pull requests."
     ],
     achievements: [
-      "Successfully delivered 15+ client projects, consistently meeting or exceeding deadlines",
-      "Integrated various APIs and third-party services to enhance website functionality",
-      "Implemented responsive and accessible UI/UX designs, improving mobile user experience by 50%"
+      "Contributed to 2+ open-source projects and helped the community by reviewing and merging pull requests.",
+      "Helped other developers to contribute to open-source projects for the first time."
     ]
   },
-  {
-    company: "StartUp Ventures",
-    position: "Junior Web Developer",
-    startDate: "Jun 2017",
-    endDate: "Feb 2019",
-    responsibilities: [
-      "Assisted in the development of the company's main product using React and Redux",
-      "Collaborated with the QA team to identify and fix bugs",
-      "Participated in daily stand-ups and sprint planning meetings"
-    ],
-    achievements: [
-      "Contributed to the successful launch of the company's flagship product",
-      "Implemented unit tests using Jest, increasing code coverage by 40%",
-      "Received 'Rookie of the Year' award for exceptional performance and quick learning"
-    ]
-  }
 ]
 
 export default experience;
