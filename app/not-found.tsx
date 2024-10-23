@@ -33,7 +33,7 @@ export default function NotFound() {
 
                         <div className="relative w-64 h-64">
                             <Image
-                                src="/gifs/404-coffee.gif"
+                                src="/gifs/espresso.gif"
                                 alt="404 Coffee Machine"
                                 layout="fill"
                                 objectFit="contain"
