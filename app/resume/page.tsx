@@ -14,15 +14,6 @@ export default function Page(){
         </div>
       </header>
 
-      <section className="mb-8">
-        <h2 className="text-2xl font-semibold mb-2">OBJECTIVE</h2>
-        <p className="text-sm">
-          Passionate software engineer seeking opportunities to apply engineering principles to solve complex challenges with
-          creative and efficient solutions. Adaptable and quick to integrate new methodologies, committed to continuous
-          improvement. A strong collaborator with a track record of delivering software projects on time in team-oriented
-          environments, always open to feedback and dedicated to following best practices for technical excellence.
-        </p>
-      </section>
 
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-2">EXPERIENCE</h2>
