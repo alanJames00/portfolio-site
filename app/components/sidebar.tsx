@@ -16,7 +16,6 @@ export default function Sidebar() {
         { name: 'Projects', href: '/projects', icon: Binary },
         { name: 'Skills', href: '/skills', icon: Code },
         { name: 'CV/Resume', href: '/resume', icon: BookOpenText},
-        { name: 'Contact', href: '/contact', icon: Mail },
     ]
 
     return (

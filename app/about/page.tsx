@@ -23,8 +23,7 @@ export default function Page() {
                 <br />
 
                 <p>
-                    During my free time, I like to read about the history of computing, and realizing how far we've come in such a short time. It's a fact that we really stand on the shoulders of giants.
-                    I also spend my time, learning and implementing various core engineering stuff, like building custom protocol parsers, writing network services, or building a simple database.
+                    I spend my free time learning and implementing various core engineering stuff, like building custom protocol parsers, writing network services, or building a simple database.
                     "Don't reinvent the wheel" is a common phrase in the software industry, but reinventing the wheel is the best way to learn how the wheel works. Re-inventing the wheel might be a bad idea for a company's production codebase, but trust me it's the best way to learn as an individual.
                     Its worth mentioning that there were times times re-inventing the wheel did lead to the creation of a better wheel that we thought was impossible and never thought we needed. Example: Rust programming language.
                 </p>

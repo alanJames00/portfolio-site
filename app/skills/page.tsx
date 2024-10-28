@@ -1,7 +1,36 @@
 import React from 'react';
-import { FaHtml5, FaCss3Alt,FaPython, FaReact, FaNodeJs, FaDatabase, FaAws, FaDocker, FaCloudflare } from 'react-icons/fa'; // Import icons from react-icons
-import { SiTailwindcss, SiNextdotjs, SiMongodb, SiPostgresql, SiFirebase, SiGraphql, SiGit, SiJira, SiTypescript, SiGnubash, SiMysql, SiSqlite, SiAmazondynamodb } from 'react-icons/si';
-import {TbBrandCpp, TbBrandGolang} from 'react-icons/tb'
+import { 
+    FaHtml5, 
+    FaCss3Alt, 
+    FaPython, 
+    FaReact, 
+    FaNodeJs, 
+    FaDatabase, 
+    FaAws, 
+    FaDocker, 
+    FaCloudflare, 
+    FaDigitalOcean } from 'react-icons/fa'; // Import icons from react-icons
+import {
+    SiTailwindcss, 
+    SiNextdotjs, 
+    SiMongodb, 
+    SiPostgresql, 
+    SiFirebase, 
+    SiGraphql, 
+    SiGit, 
+    SiJira, 
+    SiTypescript, 
+    SiGnubash, 
+    SiMysql, 
+    SiSqlite, 
+    SiAmazondynamodb, 
+    SiGooglecloud,
+    SiExpress,
+    SiHono,
+    SiTrpc
+} from 'react-icons/si';
+
+import { TbBrandCpp, TbBrandGolang } from 'react-icons/tb'
 
 const skillsData = {
     frontend: [
@@ -13,28 +42,33 @@ const skillsData = {
         { name: 'JavaScript', icon: <FaHtml5 /> }
     ],
     languages: [
-        { name: 'C/C++', icon: <TbBrandCpp />},
-        { name: 'Golang', icon: <TbBrandGolang />},
-        { name: 'Typescript', icon: <SiTypescript />},
-        { name: 'Python', icon : <FaPython />},
-        { name: 'ShellScript', icon: <SiGnubash />},
-    ],   
+        { name: 'C/C++', icon: <TbBrandCpp /> },
+        { name: 'Golang', icon: <TbBrandGolang /> },
+        { name: 'Typescript', icon: <SiTypescript /> },
+        { name: 'Python', icon: <FaPython /> },
+        { name: 'ShellScript', icon: <SiGnubash /> },
+    ],
     backend: [
         { name: 'Node.js', icon: <FaNodeJs /> },
         { name: 'GraphQL', icon: <SiGraphql /> },
-        { name: 'REST APIs', icon: <FaNodeJs /> }
+        { name: 'REST APIs', icon: <FaNodeJs /> },
+        { name: 'Express.js', icon: <SiExpress /> },
+        { name: 'Hono', icon: <SiHono />},
+        { name: 'tRPC', icon: <SiTrpc />}
     ],
     databases: [
         { name: 'MongoDB', icon: <SiMongodb /> },
         { name: 'PostgreSQL', icon: <SiPostgresql /> },
-        { name: 'MySQL', icon: <SiMysql />},
-        { name: 'SQLite', icon: <SiSqlite />},
+        { name: 'MySQL', icon: <SiMysql /> },
+        { name: 'SQLite', icon: <SiSqlite /> },
         { name: 'Firebase', icon: <SiFirebase /> },
-        { name: "Amazon DynamoDB", icon: <SiAmazondynamodb />}
+        { name: "AWS DynamoDB", icon: <SiAmazondynamodb /> }
     ],
     devops: [
         { name: 'AWS', icon: <FaAws /> },
         { name: 'Cloudflare', icon: <FaCloudflare /> },
+        { name: 'GCP', icon: <SiGooglecloud /> },
+        { name: 'DigitalOcean', icon: <FaDigitalOcean /> },
         { name: 'Docker', icon: <FaDocker /> },
         { name: 'Git', icon: <SiGit /> }
     ],
@@ -63,7 +97,7 @@ const Skills = () => {
     return (
         <div className="container mx-auto px-6 py-6">
             <h1 className="text-3xl font-semibold text-white mb-8"> Tools I Work With </h1>
-            <p className='py-4'>
+            <p className='py-4 text-xl'>
                 As you've probably noticed by now, I work with a wide range of technologies. I don’t restrict myself to any single tech stack. For me, being an engineer isn’t just about the languages or frameworks—it’s about using the right tools to get the job done. Here’s a non-exhaustive list of the tools, languages, frameworks, and technologies I use regularly:
             </p>
 
@@ -71,8 +105,8 @@ const Skills = () => {
             <SkillsSection title="Frontend Development" skills={skillsData.frontend} />
             <SkillsSection title="Backend Development" skills={skillsData.backend} />
             <SkillsSection title="Databases" skills={skillsData.databases} />
-            <SkillsSection title="DevOps" skills={skillsData.devops} />
-            <SkillsSection title="Other Tools" skills={skillsData.otherTools} />
+            <SkillsSection title="DevOps And Cloud" skills={skillsData.devops} />
+            {/* <SkillsSection title="Other Tools" skills={skillsData.otherTools} /> */}
 
         </div>
     );
