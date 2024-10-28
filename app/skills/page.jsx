@@ -5,7 +5,6 @@ import {
     FaPython, 
     FaReact, 
     FaNodeJs, 
-    FaDatabase, 
     FaAws, 
     FaDocker, 
     FaCloudflare, 
@@ -79,11 +78,11 @@ const skillsData = {
     ]
 };
 
-const SkillsSection = ({ title, skills }: any) => (
+const SkillsSection = ({ title, skills }) => (
     <div className="mb-12">
         <h2 className=" text-xl text-yellow-100 my-4">{title}</h2>
         <ul className="flex flex-wrap gap-6">
-            {skills.map((skill: any, index: any) => (
+            {skills.map((skill, index) => (
                 <li key={index} className="flex flex-col items-center p-4 shadow-lg rounded-lg bg-white text-gray-700 w-28">
                     <div className="text-4xl mb-2">{skill.icon}</div>
                     <span>{skill.name}</span>
@@ -98,7 +97,7 @@ const Skills = () => {
         <div className="container mx-auto px-6 py-6">
             <h1 className="text-3xl font-semibold text-white mb-8"> Tools I Work With </h1>
             <p className='py-4 text-xl'>
-                As you've probably noticed by now, I work with a wide range of technologies. I don’t restrict myself to any single tech stack. For me, being an engineer isn’t just about the languages or frameworks—it’s about using the right tools to get the job done. Here’s a non-exhaustive list of the tools, languages, frameworks, and technologies I use regularly:
+                As you&apos;ve probably noticed by now, I work with a wide range of technologies. I don&apos;t restrict myself to any single tech stack. For me, being an engineer isn&apos;t just about the languages or frameworks—it&apos;s about using the right tools to get the job done. Here&apos;s a non-exhaustive list of the tools, languages, frameworks, and technologies I use regularly:
             </p>
 
             <SkillsSection title="Programming Languages" skills={skillsData.languages} />

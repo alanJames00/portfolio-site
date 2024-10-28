@@ -1,7 +1,7 @@
 "use client"
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Home, User, Briefcase, Code, Mail, Github, Linkedin, Twitter, BookOpenText, Binary } from 'lucide-react'
+import { Home, User, Briefcase, Code, Github, Linkedin, Twitter, BookOpenText, Binary } from 'lucide-react'
 import socials from '@/data/socials';
 
 export default function Sidebar() {
